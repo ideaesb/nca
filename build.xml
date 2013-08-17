@@ -1,0 +1,36 @@
+<project name="nca" default="zipf">
+	
+	<target name="zipf" depends="jarfile">
+		<zip destfile="target/alerts.zip">
+			<zipfileset dir="." includes="target/caps.jar" fullpath="caps.jar" />
+			<zipfileset dir="." excludes="**/*" fullpath="cache" />
+			<zipfileset dir="." excludes="**/*" fullpath="candidateHazards" />
+			<zipfileset dir="." excludes="**/*" fullpath="logs" />
+			<zipfileset dir="src/main/resources" prefix="configs" includes="*.properties, *.xml, *.key" />
+			<zipfileset dir="target/classes" prefix="classes" excludes="*.properties, *.xml, *.key" />
+			<zipfileset dir="target/lib" prefix="lib" />
+			<zipfileset dir="src" prefix="src" />
+		</zip>
+	</target>
+	
+
+	<target name="jarfile">
+	  	<echo message="creating jarfile using mvn package" />
+	     <exec executable="cmd.exe">
+	      <arg line="/c mvn package -DskipTests=true" />
+	     </exec>
+	</target>
+	
+  <target name="deploy" depends="zipf">
+ 	<delete dir="c:/alerts" />
+    <mkdir dir="c:/alerts" />
+    <unzip src="target/alerts.zip" dest="c:/alerts" />
+  </target>
+	
+  <target name="szip">
+ 	<delete dir="c:/alerts" />
+    <mkdir dir="c:/alerts" />
+  	<zip destfile="c:/alerts/nca.zip" basedir="." />
+	</target>
+
+</project>

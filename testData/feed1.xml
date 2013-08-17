@@ -1,0 +1,1385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.1" xmlns:ha="http://www.alerting.net/namespace/index_1.0">
+  <!-- http-date = Mon, 12 Aug 2013 07:36:00 GMT -->
+  <id>http://alerts.weather.gov/cap/us.atom</id>
+  <logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
+  <generator>NWS CAP Server</generator>
+  <updated>2013-08-12T02:36:00-05:00</updated>
+  <author>
+    <name>w-nws.webmaster@noaa.gov</name>
+  </author>
+  <title>Current Watches, Warnings and Advisories for the United States Issued by the National Weather Service</title>
+  <link href="http://alerts.weather.gov/cap/us.atom" />
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AK124F11D99BB8.FloodAdvisory.124F1204A290AK.AFCFLSAFC.d64e35c56fb34e9db06b5817f67dd171</id>
+    <updated>2013-08-11T11:02:00-08:00</updated>
+    <published>2013-08-11T11:02:00-08:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Advisory issued August 11 at 11:02AM AKDT until August 13 at 5:00PM AKDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AK124F11D99BB8.FloodAdvisory.124F1204A290AK.AFCFLSAFC.d64e35c56fb34e9db06b5817f67dd171" />
+    <summary>...THE FLOOD ADVISORY REMAINS IN EFFECT UNTIL 500 PM AKDT TUESDAY FOR THE KENAI RIVER FROM SKILAK LAKE TO KENAI... AERIAL RECONNAISSANCE FROM SATURDAY EVENING CONFIRMS THAT THE SKILAK GLACIER DAM LAKE HAS NOT RELEASED. WATER LEVEL RISES OBSERVED ON THE KENAI RIVER ARE THEREFORE THE RESULT OF PROLONGED HIGH FREEZING LEVELS CAUSING INCREASED GLACIER MELT RUNOFF COMBINED WITH RECENT</summary>
+    <cap:event>Flood Advisory</cap:event>
+    <cap:effective>2013-08-11T11:02:00-08:00</cap:effective>
+    <cap:expires>2013-08-13T17:00:00-08:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Western Kenai Peninsula</cap:areaDesc>
+    <cap:polygon>60.53,-150.06 60.37,-150.06 60.35,-150.39 60.48,-151.27 60.58,-151.29 60.52,-150.44 60.53,-150.06</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>002122</value>
+      <valueName>UGC</valueName>
+      <value>AKZ121</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.PAFC.FA.Y.0012.000000T0000Z-130814T0100Z/
+/00000.N.GO.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AK124F11D99BB8.FloodAdvisory.124F1204A290AK.AFCFLSAFC.d64e35c56fb34e9db06b5817f67dd171</id>
+    <updated>2013-08-11T11:02:00-08:00</updated>
+    <published>2013-08-11T11:02:00-08:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Advisory issued August 11 at 11:02AM AKDT until August 13 at 5:00PM AKDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AK124F11D99BB8.FloodAdvisory.124F1204A290AK.AFCFLSAFC.d64e35c56fb34e9db06b5817f67dd171" />
+    <summary>...THE FLOOD ADVISORY REMAINS IN EFFECT UNTIL 500 PM AKDT TUESDAY FOR THE KENAI RIVER FROM SKILAK LAKE TO KENAI... AERIAL RECONNAISSANCE FROM SATURDAY EVENING CONFIRMS THAT THE SKILAK GLACIER DAM LAKE HAS NOT RELEASED. WATER LEVEL RISES OBSERVED ON THE KENAI RIVER ARE THEREFORE THE RESULT OF PROLONGED HIGH FREEZING LEVELS CAUSING INCREASED GLACIER MELT RUNOFF COMBINED WITH RECENT</summary>
+    <cap:event>Flood Advisory</cap:event>
+    <cap:effective>2013-08-11T11:02:00-08:00</cap:effective>
+    <cap:expires>2013-08-13T17:00:00-08:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Western Kenai Peninsula</cap:areaDesc>
+    <cap:polygon>60.53,-150.06 60.37,-150.06 60.35,-150.39 60.48,-151.27 60.58,-151.29 60.52,-150.44 60.53,-150.06</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>002122</value>
+      <valueName>UGC</valueName>
+      <value>AKZ121</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.PAFC.FA.Y.0012.000000T0000Z-130814T0100Z/
+/00000.N.GO.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AK124F11D99BB8.FloodAdvisory.124F1204A290AK.AFCFLSAFC.d64e35c56fb34e9db06b5817f67dd171</id>
+    <updated>2013-08-11T11:02:00-08:00</updated>
+    <published>2013-08-11T11:02:00-08:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Advisory issued August 11 at 11:02AM AKDT until August 13 at 5:00PM AKDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AK124F11D99BB8.FloodAdvisory.124F1204A290AK.AFCFLSAFC.d64e35c56fb34e9db06b5817f67dd171" />
+    <summary>...THE FLOOD ADVISORY REMAINS IN EFFECT UNTIL 500 PM AKDT TUESDAY FOR THE KENAI RIVER FROM SKILAK LAKE TO KENAI... AERIAL RECONNAISSANCE FROM SATURDAY EVENING CONFIRMS THAT THE SKILAK GLACIER DAM LAKE HAS NOT RELEASED. WATER LEVEL RISES OBSERVED ON THE KENAI RIVER ARE THEREFORE THE RESULT OF PROLONGED HIGH FREEZING LEVELS CAUSING INCREASED GLACIER MELT RUNOFF COMBINED WITH RECENT</summary>
+    <cap:event>Flood Advisory</cap:event>
+    <cap:effective>2013-08-11T11:02:00-08:00</cap:effective>
+    <cap:expires>2013-08-13T17:00:00-08:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Western Kenai Peninsula</cap:areaDesc>
+    <cap:polygon>60.53,-150.06 60.37,-150.06 60.35,-150.39 60.48,-151.27 60.58,-151.29 60.52,-150.44 60.53,-150.06</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>002122</value>
+      <valueName>UGC</valueName>
+      <value>AKZ121</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.PAFC.FA.Y.0013.000000T0000Z-130814T0100Z/
+/00000.N.GO.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E6A1B4.FlashFloodWatch.124F12047B80AR.TSAFFATSA.aa0b02b26e296a4dcb7f787d26cb62c8</id>
+    <updated>2013-08-11T23:37:00-05:00</updated>
+    <published>2013-08-11T23:37:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flash Flood Watch issued August 11 at 11:37PM CDT until August 13 at 7:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E6A1B4.FlashFloodWatch.124F12047B80AR.TSAFFATSA.aa0b02b26e296a4dcb7f787d26cb62c8" />
+    <summary>...FLASH FLOOD WATCH REMAINS IN EFFECT FROM 7 AM CDT MONDAY THROUGH TUESDAY EVENING... THE FLASH FLOOD WATCH CONTINUES FOR * PORTIONS OF ARKANSAS AND OKLAHOMA...INCLUDING THE FOLLOWING AREAS...IN ARKANSAS...BENTON...CARROLL...CRAWFORD...FRANKLIN... MADISON...SEBASTIAN AND WASHINGTON. IN OKLAHOMA...ADAIR...</summary>
+    <cap:event>Flash Flood Watch</cap:event>
+    <cap:effective>2013-08-11T23:37:00-05:00</cap:effective>
+    <cap:expires>2013-08-13T19:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Severe</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Benton; Carroll; Crawford; Franklin; Madison; Sebastian; Washington</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>005007 005015 005033 005047 005087 005131 005143</value>
+      <valueName>UGC</valueName>
+      <value>ARZ001 ARZ002 ARZ010 ARZ011 ARZ019 ARZ020 ARZ029</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KTSA.FF.A.0009.130812T1200Z-130814T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E605D8.FloodWarning.124F11E84FC8AR.LZKFLSLZK.a05f4607bb1e7ea0ed020a1775958c6b</id>
+    <updated>2013-08-11T19:38:00-05:00</updated>
+    <published>2013-08-11T19:38:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 7:38PM CDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E605D8.FloodWarning.124F11E84FC8AR.LZKFLSLZK.a05f4607bb1e7ea0ed020a1775958c6b" />
+    <summary>...FROM THE NATIONAL WEATHER SERVICE IN LITTLE ROCK...THE FLOOD WARNING CONTINUES FOR THE FOLLOWING RIVERS IN ARKANSAS... WHITE RIVER AT AUGUSTA AFFECTING WHITE AND WOODRUFF COUNTIES CACHE RIVER NEAR PATTERSON AFFECTING JACKSON AND WOODRUFF COUNTIES RIVER FORECASTS ARE BASED ON CURRENT CONDITIONS AND RAINFALL FORECASTED TO OCCUR OVER THE NEXT 12 HOURS. DURING PERIODS OF</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T19:38:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T10:38:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Jackson; Woodruff</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>005067 005147</value>
+      <valueName>UGC</valueName>
+      <value>ARC067 ARC147</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KLZK.FL.W.0038.000000T0000Z-000000T0000Z/
+/PTTA4.1.ER.000000T0000Z.130816T0600Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E605D8.FloodWarning.124F11E84FC8AR.LZKFLSLZK.9e4f81a3fa6c33bfb18650a4d49b2d66</id>
+    <updated>2013-08-11T19:38:00-05:00</updated>
+    <published>2013-08-11T19:38:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 7:38PM CDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E605D8.FloodWarning.124F11E84FC8AR.LZKFLSLZK.9e4f81a3fa6c33bfb18650a4d49b2d66" />
+    <summary>...FROM THE NATIONAL WEATHER SERVICE IN LITTLE ROCK...THE FLOOD WARNING CONTINUES FOR THE FOLLOWING RIVERS IN ARKANSAS... WHITE RIVER AT AUGUSTA AFFECTING WHITE AND WOODRUFF COUNTIES CACHE RIVER NEAR PATTERSON AFFECTING JACKSON AND WOODRUFF COUNTIES RIVER FORECASTS ARE BASED ON CURRENT CONDITIONS AND RAINFALL FORECASTED TO OCCUR OVER THE NEXT 12 HOURS. DURING PERIODS OF</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T19:38:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T10:38:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>White; Woodruff</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>005145 005147</value>
+      <valueName>UGC</valueName>
+      <value>ARC145 ARC147</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KLZK.FL.W.0041.000000T0000Z-000000T0000Z/
+/AUGA4.1.ER.130811T1635Z.130814T1200Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E602B8.FloodWarning.124F11E84CA8AR.LZKFLSLZK.ca6264fbf2a7a9de8a925200b5f6cfca</id>
+    <updated>2013-08-11T19:30:00-05:00</updated>
+    <published>2013-08-11T19:30:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 7:30PM CDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E602B8.FloodWarning.124F11E84CA8AR.LZKFLSLZK.ca6264fbf2a7a9de8a925200b5f6cfca" />
+    <summary>...FROM THE NATIONAL WEATHER SERVICE IN LITTLE ROCK...THE FLOOD WARNING CONTINUES FOR THE FOLLOWING RIVER IN ARKANSAS... BLACK RIVER AT POCAHONTAS AFFECTING RANDOLPH COUNTY BLACK RIVER AT BLACK ROCK AFFECTING JACKSON...LAWRENCE AND INDEPENDENCE COUNTIES RIVER FORECASTS ARE BASED ON CURRENT CONDITIONS AND RAINFALL</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T19:30:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T10:30:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Independence; Jackson; Lawrence</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>005063 005067 005075</value>
+      <valueName>UGC</valueName>
+      <value>ARC063 ARC067 ARC075</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KLZK.FL.W.0039.000000T0000Z-000000T0000Z/
+/BKRA4.1.ER.130810T1141Z.130815T0000Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E602B8.FloodWarning.124F11E84CA8AR.LZKFLSLZK.5ae738f49a14b6bac28ea7354a1edc5c</id>
+    <updated>2013-08-11T19:30:00-05:00</updated>
+    <published>2013-08-11T19:30:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 7:30PM CDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11E602B8.FloodWarning.124F11E84CA8AR.LZKFLSLZK.5ae738f49a14b6bac28ea7354a1edc5c" />
+    <summary>...FROM THE NATIONAL WEATHER SERVICE IN LITTLE ROCK...THE FLOOD WARNING CONTINUES FOR THE FOLLOWING RIVER IN ARKANSAS... BLACK RIVER AT POCAHONTAS AFFECTING RANDOLPH COUNTY BLACK RIVER AT BLACK ROCK AFFECTING JACKSON...LAWRENCE AND INDEPENDENCE COUNTIES RIVER FORECASTS ARE BASED ON CURRENT CONDITIONS AND RAINFALL</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T19:30:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T10:30:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Randolph</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>005121</value>
+      <valueName>UGC</valueName>
+      <value>ARC121</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KLZK.FL.W.0040.000000T0000Z-000000T0000Z/
+/POCA4.1.ER.130812T0900Z.130814T0600Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11D93114.HydrologicOutlook.124F11F7F860AR.LZKESFLZK.e870921679bb3aaaa4939752561073d6</id>
+    <updated>2013-08-11T11:29:00-05:00</updated>
+    <published>2013-08-11T11:29:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Hydrologic Outlook issued August 11 at 11:29AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=AR124F11D93114.HydrologicOutlook.124F11F7F860AR.LZKESFLZK.e870921679bb3aaaa4939752561073d6" />
+    <summary>...ADDITIONAL HEAVY RAIN TUESDAY WILL LIKELY CAUSE MORE FLOODING... BOTH FLASH FLOODING AND RIVER FLOODING WILL BE POSSIBLE OVER NORTHERN ARKANSAS THIS WEEK AS A POTENT COLD FRONT BRINGS HEAVY RAINFALL. THE SET UP WILL BEGIN WITH A COLD FRONT OVER NORTHWEST SECTIONS OF THE STATE TUESDAY MORNING. WITH PLENTY OF MOISTURE IN PLACE...NUMEROUS SHOWERS AND THUNDERSTORMS ARE EXPECTED TO DEVELOP</summary>
+    <cap:event>Hydrologic Outlook</cap:event>
+    <cap:effective>2013-08-11T11:29:00-05:00</cap:effective>
+    <cap:expires>2013-08-13T13:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Future</cap:urgency>
+    <cap:severity>Unknown</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Baxter; Boone; Cleburne; Conway; Independence; Izard; Jackson; Johnson; Marion; Newton; Pope; Searcy; Stone; Van Buren; White; Woodruff</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>005005 005009 005023 005029 005063 005065 005067 005071 005089 005101 005115 005129 005137 005141 005145 005147</value>
+      <valueName>UGC</valueName>
+      <value>ARC005 ARC009 ARC023 ARC029 ARC063 ARC065 ARC067 ARC071 ARC089 ARC101 ARC115 ARC129 ARC137 ARC141 ARC145 ARC147</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value></value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=GA124F11E61E74.FloodWarning.124F11E8B620GA.CHSFLSCHS.53bf94fccd743045ba260ca027c2c282</id>
+    <updated>2013-08-11T21:01:00-04:00</updated>
+    <published>2013-08-11T21:01:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 9:01PM EDT until August 12 at 2:00PM EDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=GA124F11E61E74.FloodWarning.124F11E8B620GA.CHSFLSCHS.53bf94fccd743045ba260ca027c2c282" />
+    <summary>THE FLOOD WARNING CONTINUES FOR THE OGEECHEE RIVER NEAR EDEN. * AT 8 PM SUNDAY THE STAGE WAS 9.1 FEET. * FLOOD STAGE IS 9.0 FEET. * FORECAST...THE RIVER IS EXPECTED TO DROP BELOW FLOOD STAGE EARLY MONDAY MORNING.</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T21:01:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T14:00:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Bryan; Chatham; Effingham</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>013029 013051 013103</value>
+      <valueName>UGC</valueName>
+      <value>GAC029 GAC051 GAC103</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXT.KCHS.FL.W.0023.000000T0000Z-130812T1800Z/
+/EDEG1.2.ER.130614T0207Z.130717T0715Z.130812T0600Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=GA124F11E61E74.FloodWarning.124F11F560B4GA.CHSFLSCHS.07595741a3abb1f1342028075e5f3ab4</id>
+    <updated>2013-08-11T21:01:00-04:00</updated>
+    <published>2013-08-11T21:01:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 9:01PM EDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=GA124F11E61E74.FloodWarning.124F11F560B4GA.CHSFLSCHS.07595741a3abb1f1342028075e5f3ab4" />
+    <summary>THE FLOOD WARNING CONTINUES FOR THE SAVANNAH RIVER NEAR CLYO. * AT 8 PM SUNDAY THE STAGE WAS 11.8 FEET. * FLOOD STAGE IS 11.0 FEET. * MINOR FLOODING IS OCCURRING. * FORECAST...THE RIVER WILL CONTINUE RISING TO NEAR 11.8 FEET BY</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T21:01:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T21:01:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Effingham; Screven</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>013103 013251</value>
+      <valueName>UGC</valueName>
+      <value>GAC103 GAC251</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KCHS.FL.W.0029.000000T0000Z-000000T0000Z/
+/CLYG1.2.ER.130705T1445Z.130718T2200Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E71680.SpecialWeatherStatement.124F11E72F80KS.TOPSPSTOP.470650d4ac71ea1d8be6f5929da5c99e</id>
+    <updated>2013-08-12T02:36:00-05:00</updated>
+    <published>2013-08-12T02:36:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Special Weather Statement issued August 12 at 2:36AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E71680.SpecialWeatherStatement.124F11E72F80KS.TOPSPSTOP.470650d4ac71ea1d8be6f5929da5c99e" />
+    <summary>...SIGNIFICANT WEATHER ADVISORY FOR CLOUD COUNTY... THROUGH 300 AM CDT...A STRONG THUNDERSTORM WILL MOVE EAST AT 40 MPH ACROSS PORTIONS OF CLOUD COUNTY. NATIONAL WEATHER SERVICE DOPPLER RADAR INDICATED THIS STORM IS CAPABLE OF PRODUCING PEA SIZE HAIL... STRONG WINDS OF 40 TO 50 MPH AND TORRENTIAL RAINFALL. SOME LOCATIONS THAT COULD BE AFFECTED INCLUDE AURORA...GLASCO...MILTONVALE...AND</summary>
+    <cap:event>Special Weather Statement</cap:event>
+    <cap:effective>2013-08-12T02:36:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T03:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Observed</cap:certainty>
+    <cap:areaDesc>Cloud</cap:areaDesc>
+    <cap:polygon>39.65,-97.91 39.55,-97.37 39.31,-97.37 39.31,-97.93 39.65,-97.94 39.65,-97.91</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>020029</value>
+      <valueName>UGC</valueName>
+      <value>KSZ020</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value></value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E6C220.FlashFloodWarning.124F11E73B38KS.GLDFFWGLD.b13e460f66eb9dd336a58f3142638bb3</id>
+    <updated>2013-08-12T00:20:00-05:00</updated>
+    <published>2013-08-12T00:20:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flash Flood Warning issued August 12 at 12:20AM CDT until August 12 at 3:30AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E6C220.FlashFloodWarning.124F11E73B38KS.GLDFFWGLD.b13e460f66eb9dd336a58f3142638bb3" />
+    <summary>THE NATIONAL WEATHER SERVICE IN GOODLAND HAS ISSUED A * FLASH FLOOD WARNING FOR... NORTHEASTERN NORTON COUNTY IN NORTHWEST KANSAS... * UNTIL 330 AM CDT * AT 1215 AM CDT...LOCAL LAW ENFORCEMENT OFFICIALS REPORTED WATER RUNNING OFF FIELDS AND CROSSING HIGHWAY 383 ONE MILE WEST OF</summary>
+    <cap:event>Flash Flood Warning</cap:event>
+    <cap:effective>2013-08-12T00:20:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T03:30:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Immediate</cap:urgency>
+    <cap:severity>Severe</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Norton</cap:areaDesc>
+    <cap:polygon>39.99,-99.63 39.83,-99.63 39.84,-99.78 40.00,-99.79 39.99,-99.63</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>020137</value>
+      <valueName>UGC</valueName>
+      <value>KSC137</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.NEW.KGLD.FF.W.0021.130812T0520Z-130812T0830Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E64584.FloodWatch.124F11F53940KS.ICTFFAICT.ce6276a24fe1463ff509b6bdb9a7647c</id>
+    <updated>2013-08-11T21:01:00-05:00</updated>
+    <published>2013-08-11T21:01:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Watch issued August 11 at 9:01PM CDT until August 12 at 7:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E64584.FloodWatch.124F11F53940KS.ICTFFAICT.ce6276a24fe1463ff509b6bdb9a7647c" />
+    <summary>...FLOOD WATCH IN EFFECT LATE TONIGHT THROUGH MONDAY EVENING... .ANOTHER ROUND OF HEAVY RAIN IS POSSIBLE AFTER MIDNIGHT INTO MONDAY ACROSS PORTIONS OF CENTRAL AND SOUTH CENTRAL KANSAS...SPREADING EAST ACROSS SOUTHEAST KANSAS EARLY ON MONDAY. RAINFALL AMOUNTS IN EXCESS OF 2 INCHES ARE POSSIBLE...AND MAY RESULT IN ADDITIONAL FLOODING ACROSS MUCH OF THE AREA.</summary>
+    <cap:event>Flood Watch</cap:event>
+    <cap:effective>2013-08-11T21:01:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T19:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Future</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Allen; Barton; Butler; Chase; Elk; Greenwood; Harvey; Labette; Marion; McPherson; Montgomery; Neosho; Reno; Rice; Sedgwick; Wilson; Woodson</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>020001 020009 020015 020017 020049 020073 020079 020099 020113 020115 020125 020133 020155 020159 020173 020205 020207</value>
+      <valueName>UGC</valueName>
+      <value>KSZ047 KSZ050 KSZ051 KSZ052 KSZ053 KSZ067 KSZ068 KSZ069 KSZ070 KSZ071 KSZ072 KSZ083 KSZ094 KSZ095 KSZ096 KSZ099 KSZ100</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KICT.FA.A.0006.130812T0600Z-130813T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E62C20.FloodWarning.124F11F7F860KS.ICTFLSICT.0cead941c31c82ba77a56b571c744d80</id>
+    <updated>2013-08-11T20:36:00-05:00</updated>
+    <published>2013-08-11T20:36:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 8:36PM CDT until August 13 at 1:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11E62C20.FloodWarning.124F11F7F860KS.ICTFLSICT.0cead941c31c82ba77a56b571c744d80" />
+    <summary>...The Flood Warning is cancelled for the following river in Kansas... Arkansas River At Oxford affecting Sumner County. ...The Flood Warning continues for the following river in Kansas... Arkansas River At Arkansas City affecting Cowley County. The Flood Warning continues for</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T20:36:00-05:00</cap:effective>
+    <cap:expires>2013-08-13T13:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Cowley</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>020035</value>
+      <valueName>UGC</valueName>
+      <value>KSC035</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXT.KICT.FL.W.0027.000000T0000Z-130813T1800Z/
+/ARCK1.1.ER.130805T0450Z.130810T1400Z.130813T0600Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11D95E00.FloodWarning.124F11E8B620KS.ICTFLWICT.019bf18f40e090521563952d5792a16a</id>
+    <updated>2013-08-11T12:44:00-05:00</updated>
+    <published>2013-08-11T12:44:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 12:44PM CDT until August 12 at 1:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11D95E00.FloodWarning.124F11E8B620KS.ICTFLWICT.019bf18f40e090521563952d5792a16a" />
+    <summary>THE NATIONAL WEATHER SERVICE IN WICHITA HAS EXTENDED THE * FLOOD WARNING FOR... RENO COUNTY IN SOUTH CENTRAL KANSAS... * UNTIL 100 PM CDT MONDAY * AT 1237 PM CDT...EXCESSIVE RAINFALL FROM PREVIOUS THUNDERSTORMS HAS PRODUCED FLOODING ACROSS THE WARNED AREA.</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T12:44:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T13:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Reno</cap:areaDesc>
+    <cap:polygon>38.17,-98.47 38.17,-98.22 38.16,-98.21 38.17,-97.71 37.74,-97.70 37.73,-98.46 38.17,-98.47</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>020155</value>
+      <valueName>UGC</valueName>
+      <value>KSC155</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXT.KICT.FA.W.0081.000000T0000Z-130812T1800Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11D95AE0.FloodWarning.124F11E8A0A4KS.ICTFLWICT.644ca5ae752866a02653156b69a6b916</id>
+    <updated>2013-08-11T12:36:00-05:00</updated>
+    <published>2013-08-11T12:36:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 12:36PM CDT until August 12 at 12:45PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KS124F11D95AE0.FloodWarning.124F11E8A0A4KS.ICTFLWICT.644ca5ae752866a02653156b69a6b916" />
+    <summary>THE NATIONAL WEATHER SERVICE IN WICHITA HAS EXTENDED THE * FLOOD WARNING FOR... WESTERN HARVEY COUNTY IN SOUTH CENTRAL KANSAS... * UNTIL 1245 PM CDT MONDAY * AT 1234 PM CDT... EXCESSIVE RAINFALL FROM PREVIOUS THUNDERSTORMS HAS PRODUCED FLOODING ACROSS THE WARNED AREA.</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T12:36:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T12:45:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Harvey</cap:areaDesc>
+    <cap:polygon>38.17,-97.70 38.18,-97.49 38.17,-97.43 37.92,-97.42 37.91,-97.67 37.92,-97.70 38.17,-97.70</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>020079</value>
+      <valueName>UGC</valueName>
+      <value>KSC079</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXT.KICT.FA.W.0075.000000T0000Z-130812T1745Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KY124F11E6BF00.SpecialWeatherStatement.124F11E77DA0KY.ILNSPSILN.23e10d7dfdc42bbb770038452908ef32</id>
+    <updated>2013-08-12T01:12:00-04:00</updated>
+    <published>2013-08-12T01:12:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Special Weather Statement issued August 12 at 1:12AM EDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KY124F11E6BF00.SpecialWeatherStatement.124F11E77DA0KY.ILNSPSILN.23e10d7dfdc42bbb770038452908ef32" />
+    <summary>...PATCHY DENSE FOG POSSIBLE THROUGH DAYBREAK... AREAS OF FOG HAVE DEVELOPED ACROSS THE REGION EARLY THIS MORNING WITH SOME PATCHY DENSE FOG ALSO PRESENT. USE CAUTION WHILE TRAVELING THIS MORNING AS VISIBILITIES COULD RAPIDLY DECREASE TO UNDER A QUARTER OF A MILE AT TIMES.</summary>
+    <cap:event>Special Weather Statement</cap:event>
+    <cap:effective>2013-08-12T01:12:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T06:00:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Observed</cap:certainty>
+    <cap:areaDesc>Bracken; Lewis; Mason; Pendleton; Robertson</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>021023 021135 021161 021191 021201</value>
+      <valueName>UGC</valueName>
+      <value>KYZ096 KYZ097 KYZ098 KYZ099 KYZ100</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value></value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=KY124F11E69D04.DenseFogAdvisory.124F11E819E0KY.JKLNPWJKL.6b47f042491d536cf501d11849eb0464</id>
+    <updated>2013-08-12T00:25:00-04:00</updated>
+    <published>2013-08-12T00:25:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 12:25AM EDT until August 12 at 10:00AM EDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=KY124F11E69D04.DenseFogAdvisory.124F11E819E0KY.JKLNPWJKL.6b47f042491d536cf501d11849eb0464" />
+    <summary>...AREAS OF DENSE FOG EXPECTED OVERNIGHT... .THE SHOWERS AND THUNDERSTORMS OF THE PAST SEVERAL DAYS HAVE LEFT THE GROUND ACROSS MOST OF EAST KENTUCKY QUITE MOIST. THIS WILL COMBINE WITH PARTIALLY CLEAR SKIES AND LIGHT WINDS TO GENERATE WIDESPREAD FOG. THIS FOG WILL BE THICKEST IN THE VALLEYS AND DEVELOP THERE EARLIER IN THE NIGHT. THE FOG SHOULD LIFT AND BREAK UP BY 10 AM</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T00:25:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T10:00:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Bath; Bell; Breathitt; Clay; Elliott; Estill; Fleming; Floyd; Harlan; Jackson; Johnson; Knott; Knox; Laurel; Lee; Leslie; Letcher; Magoffin; Martin; McCreary; Menifee; Montgomery; Morgan; Owsley; Perry; Pike; Powell; Pulaski; Rockcastle; Rowan; Wayne; Whitley; Wolfe</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>021011 021013 021025 021051 021063 021065 021069 021071 021095 021109 021115 021119 021121 021125 021129 021131 021133 021147 021153 021159 021165 021173 021175 021189 021193 021195 021197 021199 021203 021205 021231 021235 021237</value>
+      <valueName>UGC</valueName>
+      <value>KYZ044 KYZ050 KYZ051 KYZ052 KYZ058 KYZ059 KYZ060 KYZ068 KYZ069 KYZ079 KYZ080 KYZ083 KYZ084 KYZ085 KYZ086 KYZ087 KYZ088 KYZ104 KYZ106 KYZ107 KYZ108 KYZ109 KYZ110 KYZ111 KYZ112 KYZ113 KYZ114 KYZ115 KYZ116 KYZ117 KYZ118 KYZ119 KYZ120</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.NEW.KJKL.FG.Y.0005.130812T0425Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=MN124F11E6E7A0.DenseFogAdvisory.124F11E819E0MN.ARXNPWARX.6c498266003e3ff3aef435123048a9cd</id>
+    <updated>2013-08-12T01:16:00-05:00</updated>
+    <published>2013-08-12T01:16:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 1:16AM CDT until August 12 at 9:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=MN124F11E6E7A0.DenseFogAdvisory.124F11E819E0MN.ARXNPWARX.6c498266003e3ff3aef435123048a9cd" />
+    <summary>...DENSE FOG FORMING ACROSS THE AREA EARLY THIS MORNING... .AS OF 1 AM...CLEARING SKIES...LIGHT WINDS AND PLENTY OF LOW LEVEL MOISTURE HAVE ALREADY LEAD TO FOG FORMATION OVER MUCH OF THE ADVISORY AREA. SOME OF THE FOG WAS ALREADY DENSE WITH VISIBILITIES OF 1/4 MILE OR LESS...ESPECIALLY ACROSS THE HIGHER TERRAIN AREAS OF SOUTHEAST MINNESOTA.</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T01:16:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T09:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Dodge; Fillmore; Houston; Mower; Olmsted; Wabasha; Winona</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>027039 027045 027055 027099 027109 027157 027169</value>
+      <valueName>UGC</valueName>
+      <value>MNZ079 MNZ086 MNZ087 MNZ088 MNZ094 MNZ095 MNZ096</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KARX.FG.Y.0010.000000T0000Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F11F56050MO.SGFFLSSGF.351b11d2d1c771f9ba6fa4d66c17d3d3</id>
+    <updated>2013-08-11T23:39:00-05:00</updated>
+    <published>2013-08-11T23:39:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 11:39PM CDT until August 12 at 8:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F11F56050MO.SGFFLSSGF.351b11d2d1c771f9ba6fa4d66c17d3d3" />
+    <summary>...The Flood Warning continues for the following rivers in Missouri... Big Piney River at Fort Leonard Wood affecting Pulaski County Gasconade River at Jerome affecting Phelps County Little Osage near Horton affecting Vernon County Osage River near Schell City affecting Bates and Vernon Counties</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T23:39:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T20:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Pulaski</cap:areaDesc>
+    <cap:polygon>37.84,-92.18 37.87,-92.06 37.63,-92.03 37.64,-92.11 37.84,-92.18</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>029169</value>
+      <valueName>UGC</valueName>
+      <value>MOC169</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KSGF.FL.W.0084.000000T0000Z-130813T0100Z/
+/TBNM7.2.ER.000000T0000Z.130807T1800Z.130812T0100Z.UU/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F11F6A6E0MO.SGFFLSSGF.f3f102f69c31c19f146a232ec9472a3a</id>
+    <updated>2013-08-11T23:39:00-05:00</updated>
+    <published>2013-08-11T23:39:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 11:39PM CDT until August 13 at 4:36AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F11F6A6E0MO.SGFFLSSGF.f3f102f69c31c19f146a232ec9472a3a" />
+    <summary>...The Flood Warning continues for the following rivers in Missouri... Big Piney River at Fort Leonard Wood affecting Pulaski County Gasconade River at Jerome affecting Phelps County Little Osage near Horton affecting Vernon County Osage River near Schell City affecting Bates and Vernon Counties</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T23:39:00-05:00</cap:effective>
+    <cap:expires>2013-08-13T04:36:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Phelps</cap:areaDesc>
+    <cap:polygon>38.00,-91.99 38.00,-91.95 37.90,-91.96 37.92,-92.02 38.00,-91.99</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>029161</value>
+      <valueName>UGC</valueName>
+      <value>MOC161</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KSGF.FL.W.0083.000000T0000Z-130813T0936Z/
+/JRMM7.3.ER.130806T1421Z.130807T1815Z.130812T0936Z.NR/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F12060F04MO.SGFFLSSGF.583699cddab4b029f343ea25e85b4f55</id>
+    <updated>2013-08-11T23:39:00-05:00</updated>
+    <published>2013-08-11T23:39:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 11:39PM CDT until August 14 at 5:33AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F12060F04MO.SGFFLSSGF.583699cddab4b029f343ea25e85b4f55" />
+    <summary>...The Flood Warning continues for the following rivers in Missouri... Big Piney River at Fort Leonard Wood affecting Pulaski County Gasconade River at Jerome affecting Phelps County Little Osage near Horton affecting Vernon County Osage River near Schell City affecting Bates and Vernon Counties</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T23:39:00-05:00</cap:effective>
+    <cap:expires>2013-08-14T05:33:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Vernon</cap:areaDesc>
+    <cap:polygon>38.00,-94.54 38.01,-94.37 37.95,-94.37 37.94,-94.55 38.00,-94.54</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>029217</value>
+      <valueName>UGC</valueName>
+      <value>MOC217</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KSGF.FL.W.0076.000000T0000Z-130814T1033Z/
+/HTNM7.2.ER.130804T2020Z.130810T0000Z.130813T1033Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F12065040MO.SGFFLSSGF.69db1ac7bc0232d2bb05a3e9c0aefe66</id>
+    <updated>2013-08-11T23:39:00-05:00</updated>
+    <published>2013-08-11T23:39:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 11:39PM CDT until August 14 at 7:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E6A27C.FloodWarning.124F12065040MO.SGFFLSSGF.69db1ac7bc0232d2bb05a3e9c0aefe66" />
+    <summary>...The Flood Warning continues for the following rivers in Missouri... Big Piney River at Fort Leonard Wood affecting Pulaski County Gasconade River at Jerome affecting Phelps County Little Osage near Horton affecting Vernon County Osage River near Schell City affecting Bates and Vernon Counties</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T23:39:00-05:00</cap:effective>
+    <cap:expires>2013-08-14T07:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Bates; Vernon</cap:areaDesc>
+    <cap:polygon>38.03,-94.16 37.99,-94.06 38.06,-94.06 38.07,-94.15 38.03,-94.16</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>029013 029217</value>
+      <valueName>UGC</valueName>
+      <value>MOC013 MOC217</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KSGF.FL.W.0078.000000T0000Z-130814T1200Z/
+/SCZM7.1.ER.130809T1411Z.130810T2030Z.130813T1200Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E60BB4.FloodWarning.124F1204FEC0MO.LSXFLSLSX.14a23e04338b423537e38bf71aae84e6</id>
+    <updated>2013-08-11T19:53:00-05:00</updated>
+    <published>2013-08-11T19:53:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 7:53PM CDT until August 13 at 10:36PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=MO124F11E60BB4.FloodWarning.124F1204FEC0MO.LSXFLSLSX.14a23e04338b423537e38bf71aae84e6" />
+    <summary>...The flood warning continues for the following rivers in Missouri... Gasconade River near Rich Fountain affecting Osage County .This Flood Warning is a result of extremely heavy rainfall received across upriver portions of the Gasconade River basin earlier this week...</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T19:53:00-05:00</cap:effective>
+    <cap:expires>2013-08-13T22:36:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Osage</cap:areaDesc>
+    <cap:polygon>38.14,-91.96 38.14,-91.80 38.66,-91.50 38.66,-91.64 38.42,-91.89 38.14,-91.96</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>029151</value>
+      <valueName>UGC</valueName>
+      <value>MOC151</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXT.KLSX.FL.W.0180.000000T0000Z-130814T0336Z/
+/RIFM7.3.ER.130807T2027Z.130808T1845Z.130813T0336Z.NR/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=NC124F11E6F808.SpecialWeatherStatement.124F11E72F80NC.MHXSPSMHX.8446ec4027538f4d88289606a8bf8a47</id>
+    <updated>2013-08-12T02:58:00-04:00</updated>
+    <published>2013-08-12T02:58:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Special Weather Statement issued August 12 at 2:58AM EDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=NC124F11E6F808.SpecialWeatherStatement.124F11E72F80NC.MHXSPSMHX.8446ec4027538f4d88289606a8bf8a47" />
+    <summary>...A STRONG THUNDERSTORM WILL MOVE ACROSS CARTERET COUNTY THROUGH 400 AM EDT... AT 258 AM EDT...DOPPLER RADAR INDICATED A STRONG THUNDERSTORM OVER SOUTH RIVER...OR ABOUT 16 MILES NORTHEAST OF HAVELOCK...MOVING EAST AT 20 MPH. SOME LOCATIONS AFFECTED BY THIS STORM INCLUDE...SOUTH RIVER...PINEY</summary>
+    <cap:event>Special Weather Statement</cap:event>
+    <cap:effective>2013-08-12T02:58:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T04:00:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Observed</cap:certainty>
+    <cap:areaDesc>Carteret</cap:areaDesc>
+    <cap:polygon>34.87,-76.31 34.88,-76.30 34.82,-76.44 34.90,-76.66 34.99,-76.71 34.98,-76.59 35.08,-76.42 34.98,-76.41 34.95,-76.45 34.99,-76.39 34.98,-76.34 35.04,-76.36 34.98,-76.20 34.99,-76.30 34.96,-76.27 34.92,-76.33 34.88,-76.30 34.96,-76.20 34.80,-76.38 34.87,-76.31</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>037031</value>
+      <valueName>UGC</valueName>
+      <value>NCZ095</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value></value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=OH124F11E6BF00.SpecialWeatherStatement.124F11E77DA0OH.ILNSPSILN.78b108fa213cd6656501d8e8b9c80cf7</id>
+    <updated>2013-08-12T01:12:00-04:00</updated>
+    <published>2013-08-12T01:12:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Special Weather Statement issued August 12 at 1:12AM EDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=OH124F11E6BF00.SpecialWeatherStatement.124F11E77DA0OH.ILNSPSILN.78b108fa213cd6656501d8e8b9c80cf7" />
+    <summary>...PATCHY DENSE FOG POSSIBLE THROUGH DAYBREAK... AREAS OF FOG HAVE DEVELOPED ACROSS THE REGION EARLY THIS MORNING WITH SOME PATCHY DENSE FOG ALSO PRESENT. USE CAUTION WHILE TRAVELING THIS MORNING AS VISIBILITIES COULD RAPIDLY DECREASE TO UNDER A QUARTER OF A MILE AT TIMES.</summary>
+    <cap:event>Special Weather Statement</cap:event>
+    <cap:effective>2013-08-12T01:12:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T06:00:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Observed</cap:certainty>
+    <cap:areaDesc>Adams; Brown; Clermont; Highland; Pike; Ross; Scioto</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>039001 039015 039025 039071 039131 039141 039145</value>
+      <valueName>UGC</valueName>
+      <value>OHZ073 OHZ078 OHZ079 OHZ080 OHZ081 OHZ082 OHZ088</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value></value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=OK124F11E6A1B4.FlashFloodWatch.124F12047B80OK.TSAFFATSA.6d4c16b4fd659a4682d594c630230b36</id>
+    <updated>2013-08-11T23:37:00-05:00</updated>
+    <published>2013-08-11T23:37:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flash Flood Watch issued August 11 at 11:37PM CDT until August 13 at 7:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=OK124F11E6A1B4.FlashFloodWatch.124F12047B80OK.TSAFFATSA.6d4c16b4fd659a4682d594c630230b36" />
+    <summary>...FLASH FLOOD WATCH REMAINS IN EFFECT FROM 7 AM CDT MONDAY THROUGH TUESDAY EVENING... THE FLASH FLOOD WATCH CONTINUES FOR * PORTIONS OF ARKANSAS AND OKLAHOMA...INCLUDING THE FOLLOWING AREAS...IN ARKANSAS...BENTON...CARROLL...CRAWFORD...FRANKLIN... MADISON...SEBASTIAN AND WASHINGTON. IN OKLAHOMA...ADAIR...</summary>
+    <cap:event>Flash Flood Watch</cap:event>
+    <cap:effective>2013-08-11T23:37:00-05:00</cap:effective>
+    <cap:expires>2013-08-13T19:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Severe</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Adair; Cherokee; Craig; Creek; Delaware; Haskell; Latimer; Le Flore; Mayes; McIntosh; Muskogee; Nowata; Okfuskee; Okmulgee; Osage; Ottawa; Pawnee; Pittsburg; Rogers; Sequoyah; Tulsa; Wagoner; Washington</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>040001 040021 040035 040037 040041 040061 040077 040079 040091 040097 040101 040105 040107 040111 040113 040115 040117 040121 040131 040135 040143 040145 040147</value>
+      <valueName>UGC</valueName>
+      <value>OKZ054 OKZ055 OKZ056 OKZ057 OKZ058 OKZ059 OKZ060 OKZ061 OKZ062 OKZ063 OKZ064 OKZ065 OKZ066 OKZ067 OKZ068 OKZ069 OKZ070 OKZ071 OKZ072 OKZ073 OKZ074 OKZ075 OKZ076</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KTSA.FF.A.0009.130812T1200Z-130814T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=OK124F11E622C0.FloodAdvisory.124F11F53940OK.TSAFLSTSA.58e797647f4f826d4bbeef477fd35a6b</id>
+    <updated>2013-08-11T20:12:00-05:00</updated>
+    <published>2013-08-11T20:12:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Advisory issued August 11 at 8:12PM CDT until August 12 at 7:00PM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=OK124F11E622C0.FloodAdvisory.124F11F53940OK.TSAFLSTSA.58e797647f4f826d4bbeef477fd35a6b" />
+    <summary>...THE FLOOD ADVISORY CONTINUES FOR THE FOLLOWING RIVERS IN OKLAHOMA... Arkansas River Near Muskogee affecting Muskogee County The Flood Advisory continues for The Arkansas River Near Muskogee * until Monday evening, or until the advisory is cancelled.</summary>
+    <cap:event>Flood Advisory</cap:event>
+    <cap:effective>2013-08-11T20:12:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T19:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Muskogee</cap:areaDesc>
+    <cap:polygon>35.83,-95.37 35.59,-95.32 35.47,-95.15 35.52,-95.07 35.83,-95.20 35.83,-95.37</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>040101</value>
+      <valueName>UGC</valueName>
+      <value>OKC101</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KTSA.FL.Y.0012.000000T0000Z-130813T0000Z/
+/MKGO2.N.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=OR124F11E6C928.FireWeatherWatch.124F11F623A0OR.PDTRFWPDT.5ceac3d03b10be104545c0668f849378</id>
+    <updated>2013-08-11T22:38:00-07:00</updated>
+    <published>2013-08-11T22:38:00-07:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Fire Weather Watch issued August 11 at 10:38PM PDT until August 11 at 11:00PM PDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=OR124F11E6C928.FireWeatherWatch.124F11F623A0OR.PDTRFWPDT.5ceac3d03b10be104545c0668f849378" />
+    <summary>...THUNDERSTORMS POSSIBLE AGAIN ON MONDAY... .A LOW PRESSURE SYSTEM MOVING NORTH ALONG THE PACIFIC NORTHWEST COAST WILL CONTINUE TO SEND MOIST UNSTABLE AIR INTO THE REGION MONDAY. ISOLATED TO SCATTERED THUNDERSTORMS WILL DEVELOP AGAIN MONDAY AFTERNOON AND EVENING OVER CENTRAL TO NORTHEAST OREGON AND SOUTHEAST WASHINGTON. ABUNDANT LIGHTNING COULD STILL RESULT IN</summary>
+    <cap:event>Fire Weather Watch</cap:event>
+    <cap:effective>2013-08-11T22:38:00-07:00</cap:effective>
+    <cap:expires>2013-08-12T23:00:00-07:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Future</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Baker Valley; Eagle Cap District; Lower Columbia Basin of Oregon; Northern Blue Mountains of Oregon; Southern Blue Mountains and Strawberry Mountains; Wallowa District</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>041001 041013 041021 041023 041025 041045 041049 041055 041059 041061 041063 041065 041069</value>
+      <valueName>UGC</valueName>
+      <value>ORZ631 ORZ632 ORZ633 ORZ634 ORZ635 ORZ638</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXP.KPDT.FW.W.0009.000000T0000Z-130812T0600Z/
+/O.CON.KPDT.FW.A.0005.130812T2100Z-130813T0600Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=OR124F11E6C928.FireWeatherWatch.124F11F623A0OR.PDTRFWPDT.9f35c014e5531578e29dad2d3f4ade9b</id>
+    <updated>2013-08-11T22:38:00-07:00</updated>
+    <published>2013-08-11T22:38:00-07:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Fire Weather Watch issued August 11 at 10:38PM PDT until August 12 at 11:00PM PDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=OR124F11E6C928.FireWeatherWatch.124F11F623A0OR.PDTRFWPDT.9f35c014e5531578e29dad2d3f4ade9b" />
+    <summary>...THUNDERSTORMS POSSIBLE AGAIN ON MONDAY... .A LOW PRESSURE SYSTEM MOVING NORTH ALONG THE PACIFIC NORTHWEST COAST WILL CONTINUE TO SEND MOIST UNSTABLE AIR INTO THE REGION MONDAY. ISOLATED TO SCATTERED THUNDERSTORMS WILL DEVELOP AGAIN MONDAY AFTERNOON AND EVENING OVER CENTRAL TO NORTHEAST OREGON AND SOUTHEAST WASHINGTON. ABUNDANT LIGHTNING COULD STILL RESULT IN</summary>
+    <cap:event>Fire Weather Watch</cap:event>
+    <cap:effective>2013-08-11T22:38:00-07:00</cap:effective>
+    <cap:expires>2013-08-12T23:00:00-07:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Future</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Central Mountains of Oregon; Deschutes National Forest - minus Sisters Ranger District</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>041013 041017 041019 041023 041031 041035 041037 041039 041065 041069</value>
+      <valueName>UGC</valueName>
+      <value>ORZ611 ORZ630</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KPDT.FW.A.0005.130812T2100Z-130813T0600Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=OR124F11D9FFB8.FireWeatherWatch.124F11F623A0OR.MFRRFWMFR.da16bf34e9741dc85489c317349e0619</id>
+    <updated>2013-08-11T14:58:00-07:00</updated>
+    <published>2013-08-11T14:58:00-07:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Fire Weather Watch issued August 11 at 2:58PM PDT until August 12 at 11:00PM PDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=OR124F11D9FFB8.FireWeatherWatch.124F11F623A0OR.MFRRFWMFR.da16bf34e9741dc85489c317349e0619" />
+    <summary>...SCATTERED DRY LIGHTNING POSSIBLE MONDAY AFTERNOON AND EVENING... .A WAVE OF LOW PRESSURE ARRIVING FROM THE SOUTHWEST ON MONDAY WILL LEAD TO THE POTENTIAL OF MOSTLY DRY THUNDERSTORMS IN THE AFTERNOON AND EVENING. ...FIRE WEATHER WATCH IN EFFECT FROM 2PM PDT MONDAY AFTERNOON THROUGH 11PM PDT MONDAY EVENING FOR ABUNDANT LIGHTNING WITH DRY</summary>
+    <cap:event>Fire Weather Watch</cap:event>
+    <cap:effective>2013-08-11T14:58:00-07:00</cap:effective>
+    <cap:expires>2013-08-12T23:00:00-07:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Future</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Klamath Basin and the Fremont-Winema National Forest; South Central Oregon Desert including the BLM Land in Eastern Lake and Western Harney Counties</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>041025 041035 041037</value>
+      <valueName>UGC</valueName>
+      <value>ORZ624 ORZ625</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.NEW.KMFR.FW.A.0008.130812T2100Z-130813T0600Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=SC124F11E61E74.FloodWarning.124F11F560B4SC.CHSFLSCHS.e845f5319a432848ae93c76182ce916a</id>
+    <updated>2013-08-11T21:01:00-04:00</updated>
+    <published>2013-08-11T21:01:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 9:01PM EDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=SC124F11E61E74.FloodWarning.124F11F560B4SC.CHSFLSCHS.e845f5319a432848ae93c76182ce916a" />
+    <summary>THE FLOOD WARNING CONTINUES FOR THE SANTEE RIVER NEAR JAMESTOWN. * AT 8 PM SUNDAY THE STAGE WAS 13.0 FEET. * FLOOD STAGE IS 10.0 FEET. * MINOR FLOODING IS OCCURRING. * FORECAST...THE RIVER WILL RISE TO NEAR 13.1 FEET BY EARLY MONDAY</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T21:01:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T21:01:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Berkeley; Georgetown; Williamsburg</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>045015 045043 045089</value>
+      <valueName>UGC</valueName>
+      <value>SCC015 SCC043 SCC089</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KCHS.FL.W.0030.000000T0000Z-000000T0000Z/
+/JAMS1.2.ER.130705T1240Z.130720T0615Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=SC124F11E61E74.FloodWarning.124F11F560B4SC.CHSFLSCHS.81dc67bbe3aa8bd206a898af54971e86</id>
+    <updated>2013-08-11T21:01:00-04:00</updated>
+    <published>2013-08-11T21:01:00-04:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 9:01PM EDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=SC124F11E61E74.FloodWarning.124F11F560B4SC.CHSFLSCHS.81dc67bbe3aa8bd206a898af54971e86" />
+    <summary>THE FLOOD WARNING CONTINUES FOR THE SAVANNAH RIVER NEAR CLYO. * AT 8 PM SUNDAY THE STAGE WAS 11.8 FEET. * FLOOD STAGE IS 11.0 FEET. * MINOR FLOODING IS OCCURRING. * FORECAST...THE RIVER WILL CONTINUE RISING TO NEAR 11.8 FEET BY</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T21:01:00-04:00</cap:effective>
+    <cap:expires>2013-08-12T21:01:00-04:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Hampton; Jasper</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>045049 045053</value>
+      <valueName>UGC</valueName>
+      <value>SCC049 SCC053</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KCHS.FL.W.0029.000000T0000Z-000000T0000Z/
+/CLYG1.2.ER.130705T1445Z.130718T2200Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=SD124F11BA62C0.FloodWarning.124F120749DCSD.ABRFLSABR.de2c524c15f9786f1a0aaaf8d788151b</id>
+    <updated>2013-08-09T08:40:00-06:00</updated>
+    <published>2013-08-09T08:40:00-06:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 09 at 8:40AM MDT until further notice by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=SD124F11BA62C0.FloodWarning.124F120749DCSD.ABRFLSABR.de2c524c15f9786f1a0aaaf8d788151b" />
+    <summary>...THE FLOOD WARNING IS CANCELLED FOR THE FOLLOWING RIVERS IN SOUTH DAKOTA... JAMES RIVER NEAR COLUMBIA ...THE FLOOD WARNING CONTINUES FOR THE FOLLOWING RIVERS IN SOUTH DAKOTA... JAMES RIVER NEAR STRATFORD</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-09T08:40:00-06:00</cap:effective>
+    <cap:expires>2013-08-14T12:39:00-06:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Brown; Spink</cap:areaDesc>
+    <cap:polygon>45.52,-98.30 45.15,-98.45 45.15,-98.35 45.52,-98.18 45.52,-98.30</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>046013 046115</value>
+      <valueName>UGC</valueName>
+      <value>SDC013 SDC115</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KABR.FL.W.0003.000000T0000Z-000000T0000Z/
+/SFDS2.1.ER.000000T0000Z.130805T1731Z.000000T0000Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=TX124F11E60CE0.FloodWarning.124F11E8534CTX.MAFFLSMAF.08642f4f519c50a2e06282c13ea52c6e</id>
+    <updated>2013-08-11T19:56:00-05:00</updated>
+    <published>2013-08-11T19:56:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Flood Warning issued August 11 at 7:56PM CDT until August 12 at 10:47AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=TX124F11E60CE0.FloodWarning.124F11E8534CTX.MAFFLSMAF.08642f4f519c50a2e06282c13ea52c6e" />
+    <summary>...The Flood Warning continues for the following rivers in Texas... Rio Grande below Presidio 5SE affecting Presidio County Releases from Luis Leon Reservoir will keep Rio Grande flows through Presidio 5SE above flood stage today. The river will fall below flood stage later tonight, but will remain above action stage over the next few days.</summary>
+    <cap:event>Flood Warning</cap:event>
+    <cap:effective>2013-08-11T19:56:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T10:47:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Presidio</cap:areaDesc>
+    <cap:polygon>29.45,-104.35 29.61,-104.30 29.59,-104.25 29.37,-103.94 29.23,-104.01 29.45,-104.35</cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>048377</value>
+      <valueName>UGC</valueName>
+      <value>TXC377</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXT.KMAF.FL.W.0015.000000T0000Z-130812T1547Z/
+/PRDT2.1.ER.130727T1505Z.130729T1445Z.130812T0347Z.NO/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=WA124F11E6C928.FireWeatherWatch.124F11F623A0WA.PDTRFWPDT.6a016eec5c6eaba68a18dcd391a5c233</id>
+    <updated>2013-08-11T22:38:00-07:00</updated>
+    <published>2013-08-11T22:38:00-07:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Fire Weather Watch issued August 11 at 10:38PM PDT until August 11 at 11:00PM PDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=WA124F11E6C928.FireWeatherWatch.124F11F623A0WA.PDTRFWPDT.6a016eec5c6eaba68a18dcd391a5c233" />
+    <summary>...THUNDERSTORMS POSSIBLE AGAIN ON MONDAY... .A LOW PRESSURE SYSTEM MOVING NORTH ALONG THE PACIFIC NORTHWEST COAST WILL CONTINUE TO SEND MOIST UNSTABLE AIR INTO THE REGION MONDAY. ISOLATED TO SCATTERED THUNDERSTORMS WILL DEVELOP AGAIN MONDAY AFTERNOON AND EVENING OVER CENTRAL TO NORTHEAST OREGON AND SOUTHEAST WASHINGTON. ABUNDANT LIGHTNING COULD STILL RESULT IN</summary>
+    <cap:event>Fire Weather Watch</cap:event>
+    <cap:effective>2013-08-11T22:38:00-07:00</cap:effective>
+    <cap:expires>2013-08-12T23:00:00-07:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Future</cap:urgency>
+    <cap:severity>Moderate</cap:severity>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:areaDesc>Blue Mountains of Washington; Lower Columbia Basin of Washington</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>053003 053005 053013 053021 053023 053039 053071 053075 053077</value>
+      <valueName>UGC</valueName>
+      <value>WAZ631 WAZ633</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXP.KPDT.FW.W.0009.000000T0000Z-130812T0600Z/
+/O.CON.KPDT.FW.A.0005.130812T2100Z-130813T0600Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6EEA8.DenseFogAdvisory.124F11E819E0WI.MKXNPWMKX.44826d6093a5dbac53663d53898bad55</id>
+    <updated>2013-08-12T01:34:00-05:00</updated>
+    <published>2013-08-12T01:34:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 1:34AM CDT until August 12 at 9:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6EEA8.DenseFogAdvisory.124F11E819E0WI.MKXNPWMKX.44826d6093a5dbac53663d53898bad55" />
+    <summary>...DENSE FOG TO PERSIST EARLY THIS MORNING... .LIGHT WINDS AND HIGH LOW LEVEL HUMIDITY WILL COMBINE WITH PARTIAL CLEARING TO PRODUCE DENSE FOG OVER A SMALL PART OF SOUTH CENTRAL AND EAST CENTRAL WISCONSIN FOR THE REST OF TONIGHT. DENSE FOG IS EXPECTED IN THE SHEBOYGAN...FOND DU LAC...BERLIN...WESTFIELD... MONTELLO AND PRINCETON AREAS. THE DENSE FOG WILL REDUCE THE</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T01:34:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T09:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Green Lake; Marquette</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>055047 055077</value>
+      <valueName>UGC</valueName>
+      <value>WIZ046 WIZ047</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KMKX.FG.Y.0011.000000T0000Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6EEA8.DenseFogAdvisory.124F11E819E0WI.MKXNPWMKX.af79a16709dfe0cd5c70a7ba1126ebcc</id>
+    <updated>2013-08-12T01:34:00-05:00</updated>
+    <published>2013-08-12T01:34:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 1:34AM CDT until August 12 at 9:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6EEA8.DenseFogAdvisory.124F11E819E0WI.MKXNPWMKX.af79a16709dfe0cd5c70a7ba1126ebcc" />
+    <summary>...DENSE FOG TO PERSIST EARLY THIS MORNING... .LIGHT WINDS AND HIGH LOW LEVEL HUMIDITY WILL COMBINE WITH PARTIAL CLEARING TO PRODUCE DENSE FOG OVER A SMALL PART OF SOUTH CENTRAL AND EAST CENTRAL WISCONSIN FOR THE REST OF TONIGHT. DENSE FOG IS EXPECTED IN THE SHEBOYGAN...FOND DU LAC...BERLIN...WESTFIELD... MONTELLO AND PRINCETON AREAS. THE DENSE FOG WILL REDUCE THE</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T01:34:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T09:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Fond Du Lac; Sheboygan</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>055039 055117</value>
+      <valueName>UGC</valueName>
+      <value>WIZ051 WIZ052</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXA.KMKX.FG.Y.0011.000000T0000Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6ED7C.DenseFogAdvisory.124F11E819E0WI.GRBNPWGRB.428da0c98dc298a4d96d7c34a0f8ff23</id>
+    <updated>2013-08-12T01:31:00-05:00</updated>
+    <published>2013-08-12T01:31:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 1:31AM CDT until August 12 at 9:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6ED7C.DenseFogAdvisory.124F11E819E0WI.GRBNPWGRB.428da0c98dc298a4d96d7c34a0f8ff23" />
+    <summary>...DENSE FOG EXPECTED TONIGHT... .LIGHT WINDS...PLENTY OF LOW LEVEL MOISTURE...AND CLEARING SKIES WILL LEAD TO AREAS OF DENSE FOG OVERNIGHT. ...DENSE FOG ADVISORY REMAINS IN EFFECT UNTIL 9 AM CDT THIS MORNING... * VISIBILITIES WILL DROP THROUGH THE NIGHT WITH MANY AREAS</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T01:31:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T09:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Marathon; Portage; Waupaca; Waushara; Wood</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>055073 055097 055135 055137 055141</value>
+      <valueName>UGC</valueName>
+      <value>WIZ030 WIZ035 WIZ036 WIZ037 WIZ045</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KGRB.FG.Y.0004.000000T0000Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6ED7C.DenseFogAdvisory.124F11E819E0WI.GRBNPWGRB.615e928cf3ce6a33ccb47d30e6827b5d</id>
+    <updated>2013-08-12T01:31:00-05:00</updated>
+    <published>2013-08-12T01:31:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 1:31AM CDT until August 12 at 9:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6ED7C.DenseFogAdvisory.124F11E819E0WI.GRBNPWGRB.615e928cf3ce6a33ccb47d30e6827b5d" />
+    <summary>...DENSE FOG EXPECTED TONIGHT... .LIGHT WINDS...PLENTY OF LOW LEVEL MOISTURE...AND CLEARING SKIES WILL LEAD TO AREAS OF DENSE FOG OVERNIGHT. ...DENSE FOG ADVISORY IN EFFECT UNTIL 9 AM CDT THIS MORNING... THE NATIONAL WEATHER SERVICE IN GREEN BAY HAS ISSUED A DENSE FOG ADVISORY...WHICH IS IN EFFECT UNTIL 9 AM CDT THIS MORNING.</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T01:31:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T09:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Brown; Calumet; Kewaunee; Manitowoc; Outagamie; Shawano; Winnebago</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>055009 055015 055061 055071 055087 055115 055139</value>
+      <valueName>UGC</valueName>
+      <value>WIZ031 WIZ038 WIZ039 WIZ040 WIZ048 WIZ049 WIZ050</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.EXA.KGRB.FG.Y.0004.000000T0000Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+  <entry>
+    <id>http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6E7A0.DenseFogAdvisory.124F11E819E0WI.ARXNPWARX.6f1a2daac430fc714006bcf85286b27c</id>
+    <updated>2013-08-12T01:16:00-05:00</updated>
+    <published>2013-08-12T01:16:00-05:00</published>
+    <author>
+      <name>w-nws.webmaster@noaa.gov</name>
+    </author>
+    <title>Dense Fog Advisory issued August 12 at 1:16AM CDT until August 12 at 9:00AM CDT by NWS</title>
+    <link href="http://alerts.weather.gov/cap/wwacapget.php?x=WI124F11E6E7A0.DenseFogAdvisory.124F11E819E0WI.ARXNPWARX.6f1a2daac430fc714006bcf85286b27c" />
+    <summary>...DENSE FOG FORMING ACROSS THE AREA EARLY THIS MORNING... .AS OF 1 AM...CLEARING SKIES...LIGHT WINDS AND PLENTY OF LOW LEVEL MOISTURE HAVE ALREADY LEAD TO FOG FORMATION OVER MUCH OF THE ADVISORY AREA. SOME OF THE FOG WAS ALREADY DENSE WITH VISIBILITIES OF 1/4 MILE OR LESS...ESPECIALLY ACROSS THE HIGHER TERRAIN AREAS OF SOUTHEAST MINNESOTA.</summary>
+    <cap:event>Dense Fog Advisory</cap:event>
+    <cap:effective>2013-08-12T01:16:00-05:00</cap:effective>
+    <cap:expires>2013-08-12T09:00:00-05:00</cap:expires>
+    <cap:status>Actual</cap:status>
+    <cap:msgType>Alert</cap:msgType>
+    <cap:category>Met</cap:category>
+    <cap:urgency>Expected</cap:urgency>
+    <cap:severity>Minor</cap:severity>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:areaDesc>Adams; Buffalo; Clark; Jackson; Juneau; La Crosse; Monroe; Trempealeau; Vernon</cap:areaDesc>
+    <cap:polygon></cap:polygon>
+    <cap:geocode>
+      <valueName>FIPS6</valueName>
+      <value>055001 055011 055019 055053 055057 055063 055081 055121 055123</value>
+      <valueName>UGC</valueName>
+      <value>WIZ029 WIZ032 WIZ033 WIZ034 WIZ041 WIZ042 WIZ043 WIZ044 WIZ053</value>
+    </cap:geocode>
+    <cap:parameter>
+      <valueName>VTEC</valueName>
+      <value>/O.CON.KARX.FG.Y.0010.000000T0000Z-130812T1400Z/ /O.EXA.KGRB.FG.Y.0004.000000T0000Z-130812T1400Z/</value>
+    </cap:parameter>
+  </entry>
+</feed>
