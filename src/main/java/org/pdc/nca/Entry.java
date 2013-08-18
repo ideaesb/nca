@@ -445,8 +445,9 @@ public String getKey()
 	  {
 	    for (int i=0; i < capGeoCodeNames.length; i++)
 	    {
-	    	geocodes.addContent(new Element("capGeoName").setText(capGeoCodeNames[i]));
-	    	geocodes.addContent(new Element("capGeoValue").setText(capGeoCodeValue[i]));
+	    	Element geoElement = new Element("capGeoValue").setText(capGeoCodeValue[i]);
+	    	geoElement.setAttribute(new Attribute("name", capGeoCodeNames[i]));
+	    	geocodes.addContent(geoElement);
 	    }
 	  }
 	  entry.addContent(geocodes);
