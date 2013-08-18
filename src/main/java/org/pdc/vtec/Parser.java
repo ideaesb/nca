@@ -1,10 +1,10 @@
 package org.pdc.vtec;
 
 import java.util.regex.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
@@ -24,6 +24,26 @@ public class Parser
 	public Parser(String stringContainingVTEC)
 	{
 		bulletin = stringContainingVTEC;
+		
+		
+		PropertiesConfiguration config = null;
+		try
+		{
+		   config = new PropertiesConfiguration("vtec.pattern.properties");
+		   vtecPattern = config.getString("vtec.pattern");
+		   logger.info("Loaded VTEC pattern " + vtecPattern);
+	    }
+		catch (org.apache.commons.configuration.ConfigurationException e)
+		{
+		  // do nothing just log and use defaults 
+		  logger.warn("Unable to load the configuration (vtec.pattern.properties) " + e.toString());
+		}
+		
+		
+		
+		////////////////////////////////////////
+		// use the patterns to fill the messages
+		
 		digest();
 	}
 	
@@ -48,7 +68,7 @@ public class Parser
 		while (matcher.find())
 		{
 			String matchedText = matcher.group();
-			logger.info("Found VTEC " + matchedText);
+			logger.info("Found VTEC MATCH -->" + matchedText);
 			messages.add(new Message(matchedText));
 		}
 
@@ -57,7 +77,7 @@ public class Parser
 	
     public static void main( String[] args )
     {
-    	String vtec = "/O.UPG.KPIH.FW.A.0007.130815T1800Z-130817T0300Z/ /O.NEW.KPIH.FW.W.0019.130815T1800Z-130817T0300Z/";
-        Parser vtecParser = new Parser(vtec); 
+    	//String vtec = "/O.UPG.KPIH.FW.A.0007.130815T1800Z-130817T0300Z/ /O.NEW.KPIH.FW.W.0019.130815T1800Z-130817T0300Z/";
+        //Parser vtecParser = new Parser(vtec); 
     }
 }

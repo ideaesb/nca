@@ -54,6 +54,7 @@ public class Entry implements Serializable
   private String capCertainty="";
   private String capAreaDesc="";
   private String capPolygon="";
+  private String key = "";
   
   private String[] capGeoCodeNames = {""};
   private String[] capGeoCodeValue = {""};
@@ -91,6 +92,13 @@ public class Entry implements Serializable
   //private DateTimeFormatter dateTimeFormatter = ISODateTimeFormat.dateTimeNoMillis();
   
   /**
+   * Empty constructor for hibernate, java bean only - do NOT use in code, use the next one...
+   */
+  public Entry()
+  {
+  }
+  
+  /**
    * Build out of SyndEntry, copy, parse into itself 
    * @param entry
    */
@@ -98,6 +106,7 @@ public class Entry implements Serializable
   {
     syndEntry = entry; 	  
     copySyndEntry();
+    setMytKey();
   }
 
   public Logger getLogger() {
@@ -277,7 +286,15 @@ public void setHaveGeoCodes(boolean haveGeoCodes) {
 	this.haveGeoCodes = haveGeoCodes;
 }
 
+public void setKey(String k)
+{
+	this.key = k;
+}
 
+public String getKey()
+{
+	return this.key;
+}
 /**
    * Provides access to syndEntry (and all this methods)
    * @return the internal SyndEntry member variable 
@@ -292,38 +309,65 @@ public void setHaveGeoCodes(boolean haveGeoCodes) {
   * TODO may be modified to any string like hash of various parameters  
   * @return  the CAP ID concatenated dot published date in milliseconds since java epoch  
   */
-  public String getKey()
+  private void setMytKey()
   {
 	
-	String key = syndEntry.getLink() + "." + syndEntry.getPublishedDate().getTime();
+	String myKey = syndEntry.getLink() + "." + syndEntry.getPublishedDate().getTime();
 	
-	if (this.messages.size() > 0) 
+	try
 	{
-		  String [] vtecArr = StringUtils.split(this.messages.get(0).getVtec(), "/");
-          key += "." + StringUtils.replace(vtecArr[0], "-", "."); // this will replace dash with dot for better filenaming
-          
-          if (this.messages.get(0).isHaveHvtec())
-          {
-              key += "." + vtecArr[2];
-          }
-
+	
+		if (this.messages.size() > 0) 
+		{
+			  String [] vtecArr = StringUtils.split(this.messages.get(0).getVtec(), "/");
+			  myKey += "." + StringUtils.replace(vtecArr[0], "-", "."); // this will replace dash with dot for better filenaming
+	          
+	          if (this.messages.get(0).isHaveHvtec())
+	          {
+	        	  myKey += "." + vtecArr[2];
+	              logger.info("KEY = MD5(Full#title#updateMillis#P-VTEC#H-VTEC");
+	          }
+	          else
+	          {
+	          
+	            logger.info("KEY = MD5(Triple#title+updateMillis+P-VTEC#1");
+	          }
+	
+		}
+		else
+		{
+			logger.info("Will be just hashing title and updateMillis");
+		}
+	
+	}
+	catch(Exception e)
+	{
+		// just will not get VTEC info into the hash  key -- big deal, just ignore it, but log it - could be sign of trouble with VTEC parser
+		logger.warn("Unable to build VTEC into the Key " + e.toString());
+		if (this.messages.size() > 0)
+		{
+			// definitely error
+			logger.error("Even though this entries has " +  this.messages.size() + " VTECs embedded into it.  Most definitely a PARSE error");
+		}
 	}
 	
 	// try hashing it
 	try
 	{
-		logger.info("Attempting MD5 Hashing key = " + key);
-		key = getMD5hash(key);
+		logger.info("Attempting MD5 Hashing key = " + myKey);
+		myKey = getMD5hash(myKey);
 	}
 	catch (Exception e)
 	{
-		logger.warn("FAILED to Hash key " + e.toString());
-		key = StringUtils.substringAfterLast(key, "=");	
+		logger.warn("FAILED to Hash key " + e.toString() + ", will be generating filenames based on id, updateMillis");
+		myKey = StringUtils.substringAfterLast(myKey, "=");	
 	}
 	
 	
-	logger.info("Generated key " + key + " for feed entry >> " + syndEntry.getTitle() + " << updated " + syndEntry.getUpdatedDate());
-	return key;
+	logger.info("Generated key " + myKey+ " for feed entry >> " + syndEntry.getTitle() + " << updated " + syndEntry.getUpdatedDate());
+	
+	
+	this.setKey(myKey);
   }
 	 
   public String getFilename(String ext)
@@ -652,7 +696,7 @@ public void setHaveGeoCodes(boolean haveGeoCodes) {
 				  logger.info("The paramter elments was found to NOT have exactly two children - did the NWS CAP ATOM VTEC release change, add more parameters ??????????");
 			  }
 			  
-			  logger.info("iterating through children of <cap:parameter> - VTEC codes are released here");
+			  logger.info("iterating through children of <cap:parameter> - VTEC codes are released by NWS here within this tag...");
 			  for (Object child: children)
 			  {
 				  Element paramElem = (Element) child;
@@ -676,6 +720,13 @@ public void setHaveGeoCodes(boolean haveGeoCodes) {
 						  logger.info("Raw VTEC, warts and all, within <value> tag " + vtec);
 						  Parser parser = new Parser(vtec);
 						  messages = parser.getMessages();
+						  logger.info("Number VTEC Message Objects Generated " + messages.size());
+						  if (this.messages.size() > 2)
+				          {
+				        	  // this would be that rare entry more than two (or more?!) P-VTEC; log it, just for kicks - most likely a parse error
+				        	  logger.error("Aloha, this is NOT an FATAL ERROR, chill-out, found a strange beast in the wild - a Feed Entry with " + messages.size() + " VTECs");
+				        	  logger.error(this.getSyndEntry().getTitle() + ",  Last Updated " + this.getSyndEntry().getUpdatedDate());
+				          }
 					  }
 				  }
   

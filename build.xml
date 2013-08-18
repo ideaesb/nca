@@ -1,36 +1,149 @@
-<project name="nca" default="zipf">
+<project name="nca" default="help" basedir=".">
 	
-	<target name="zipf" depends="jarfile">
-		<zip destfile="target/alerts.zip">
-			<zipfileset dir="." includes="target/caps.jar" fullpath="caps.jar" />
-			<zipfileset dir="." excludes="**/*" fullpath="cache" />
-			<zipfileset dir="." excludes="**/*" fullpath="candidateHazards" />
-			<zipfileset dir="." excludes="**/*" fullpath="logs" />
+	 <property file="build.properties" />
+
+
+	  <path id="libraries">
+	 	<fileset dir="target/lib">
+	 	 <include name="**/*.jar"/>
+	 	</fileset>
+	  </path>
+
+	  <property name="classpath" refid="libraries" />
+	
+	 <target name="help">
+	    <echo>You can use the following targets:</echo>
+	    <echo />
+	    <echo>  help    : (default) Prints this message </echo>
+	    <echo>  all     : Packages ${app.name}.zip in ${temp.dir}, same as dist, will include ${dist.name}.zip in target directory</echo>
+	    <echo>  dist    : Packages ${app.name}.zip in ${temp.dir}...does NOT deploy</echo>
+	    <echo>  deploy  : deploys application into ${deployment.dir}...does NOT do all/dist</echo>
+	    <echo>  clean   : cleans out local disk cache and database cache</echo>
+	    <echo>  compile : Compiles into target/class files</echo>
+	    <echo>  jarfile : builds ${jar.file} in target directory</echo>
+	    <echo>  zipfile : builds ${${dist.name}.zip in target directory</echo>
+	    <echo>  createdb : creates a database instance same as app name ${app.name}</echo>
+	    <echo>  dropdb : drops database instance same as app name ${app.name}</echo>
+	    <echo>  maven-jar : builds ${jar.file} in target directory using Maven - includes all lib folder</echo>
+	    <echo>  timestamp.target : test if and how the timestamp function works to adjust format to taste</echo>
+	    <echo />
+	    <echo>For example, to clean, compile, and package all at once, run:</echo>
+	    <echo>prompt> ant all </echo>
+	  </target>
+	
+	<target name="all" depends="dist" description="Clean temp dirs, fresh compiles and create ${app.name}.zip, in ${temp.dir}"/>
+	
+	<target name="zipfile" depends="jarfile">
+		<zip destfile="target/${dist.name}.zip">
+			<zipfileset dir="." includes="target/${jar.file}" fullpath="${jar.file}" />
 			<zipfileset dir="src/main/resources" prefix="configs" includes="*.properties, *.xml, *.key" />
-			<zipfileset dir="target/classes" prefix="classes" excludes="*.properties, *.xml, *.key" />
 			<zipfileset dir="target/lib" prefix="lib" />
-			<zipfileset dir="src" prefix="src" />
 		</zip>
 	</target>
 	
-
-	<target name="jarfile">
-	  	<echo message="creating jarfile using mvn package" />
+	<tstamp>
+		<format pattern="dd-MMMMM-yyyy hh:mm aaa z" property="TODAY"/>
+	</tstamp>
+	
+	<target name="jarfile" depends="compile">
+		<jar destfile="target/caps.jar" basedir="target/classes">
+			<manifest>
+				<attribute name="Implementation-Vendor" value="Pacific Disaster Center"/>
+				<attribute name="Implementation-Title" value="NWS CAP Atom Feed Reader"/>
+				<attribute name="Implementation-Version" value="1.0-Alpha ${TODAY}"/>
+				<attribute name="Main-Class" value="org.pdc.nca.FeedReader"/>
+				<attribute name="Class-Path" 
+					       value="configs/ lib/activation-1.1.jar
+				                           lib/antlr-2.7.7.jar
+				                           lib/commons-configuration-1.9.jar
+				                           lib/commons-lang-2.6.jar
+				                           lib/commons-logging-1.1.1.jar
+				                           lib/dom4j-1.6.1.jar
+				                           lib/ehcache-ee-2.7.3.jar
+				                           lib/hamcrest-core-1.1.jar
+				                           lib/hibernate-commons-annotations-4.0.2.Final.jar
+				                           lib/hibernate-core-4.2.4.Final.jar
+				                           lib/hibernate-jpa-2.0-api-1.0.1.Final.jar
+				                           lib/javassist-3.15.0-GA.jar
+				                           lib/javax.mail-1.5.0.jar
+				                           lib/jboss-logging-3.1.0.GA.jar
+				                           lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar
+                                           lib/jdom-1.0.jar
+                                           lib/jdom-1.1.3.jar
+                                           lib/junit-4.10.jar
+                                           lib/log4j-1.2.17.jar
+                                           lib/postgresql-9.1-901.jdbc4.jar
+                                           lib/rome-1.0.jar
+                                           lib/slf4j-api-1.6.6.jar
+                                           lib/slf4j-log4j12-1.7.5.jar" />
+			  </manifest>
+		   </jar>
+	</target>
+	
+	
+	<target name="timestamp.target"><echo>${TODAY}</echo></target>
+	
+	
+	<target name="maven-jar">
+	  	<echo message="creating jarfile" />
 	     <exec executable="cmd.exe">
 	      <arg line="/c mvn package -DskipTests=true" />
 	     </exec>
 	</target>
+
+	  <target name="compile">
+	  		
+	  	<delete dir="target/classes" />
+	  	<mkdir  dir="target/classes" />
+
+	    <echo message="Compiling src to target/classes " />
+	    <javac srcdir="src" destdir="target/classes" includeantruntime="false"
+	           classpath="${classpath}" debug="true" deprecation="true" optimize="false" />
+	  </target>
 	
-  <target name="deploy" depends="zipf">
- 	<delete dir="c:/alerts" />
-    <mkdir dir="c:/alerts" />
-    <unzip src="target/alerts.zip" dest="c:/alerts" />
+  <target name="deploy" depends="clean,zipfile">
+    <delete dir="${deployment.dir}"/>
+    <mkdir dir="${deployment.dir}" />
+    <unzip src="target/${dist.name}.zip" dest="${deployment.dir}"/>
   </target>
 	
-  <target name="szip">
- 	<delete dir="c:/alerts" />
-    <mkdir dir="c:/alerts" />
-  	<zip destfile="c:/alerts/nca.zip" basedir="." />
+  <target name="dist" depends="zipfile" >
+    
+  	<delete dir="${temp.dir}/${app.name}"/>
+    <copy file="build.properties" todir="${temp.dir}/${app.name}" />
+    <copy file="build.xml" todir="${temp.dir}/${app.name}" />
+    <copy file="pom.xml" todir="${temp.dir}/${app.name}" />
+  	<copy todir="${temp.dir}/${app.name}/src">
+  		<fileset dir="src" />
+  	</copy>
+  	<copy todir="${temp.dir}/${app.name}/target">
+  		<fileset dir="target" />
+  	</copy>
+  	<copy todir="${temp.dir}/${app.name}/testData">
+  		<fileset dir="testData" />
+  	</copy>
+  	<zip destfile="${temp.dir}/${app.name}.zip" basedir="${temp.dir}/${app.name}" update="false"/>
+  </target>
+
+  <target name="clean" description="cleans out local development caches and database cache">
+  	<delete dir="${candidates.dir}" />
+  	<delete dir="cache" />
+  	<delete dir="logs" />
+    <antcall target="dropdb" />
+    <antcall target="createdb" />
+  </target>
+
+   <target name="dropdb">
+  	<echo message="dropping database instance ${app.name}" />
+     <exec executable="cmd.exe">
+      <arg line="/c dropdb --username postgres --no-password --host localhost --port 5432 ${app.name}" />
+     </exec>
 	</target>
 
+	   <target name="createdb">
+	  	<echo message="creating database instance ${app.name}" />
+	     <exec executable="cmd.exe">
+	      <arg line="/c createdb --username postgres --no-password --host localhost --port 5432 -T template0 ${app.name}" />
+	     </exec>
+		</target>
 </project>
