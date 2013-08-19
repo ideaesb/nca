@@ -1,6 +1,15 @@
 package org.pdc.nca.dao;
 
-import org.hibernate.HibernateException;
+
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+
+import org.apache.commons.lang.StringUtils;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
@@ -9,12 +18,11 @@ import org.hibernate.service.ServiceRegistryBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import org.pdc.nca.Entry;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,10 +32,17 @@ public class EntryDao {
 	
 	private static SessionFactory sessionFactory;
     private static ServiceRegistry serviceRegistry;
+    
+    private String DB_DRIVER = "org.postgresql.Driver";
+	private String DB_CONNECTION = "jdbc:postgresql:nca";
+	private String DB_USER = "postgres";
+	private String DB_PASSWORD = "admin123";
+    
 
-    public EntryDao()
+    public EntryDao(boolean useHibernate)
     {
-      setSessionFactory();
+      if (useHibernate) setSessionFactory();
+      // else database just using plain JDBC 
     }
 	
     
@@ -141,4 +156,153 @@ public class EntryDao {
 		}
     }
 	
+	
+	
+	public boolean  tryAdd(Entry entry)  {
+		 
+		Connection dbConnection = null;
+		PreparedStatement preparedStatement = null;
+		boolean result = false; 
+ 
+		String insertTableSQL = "INSERT INTO ENTRIES (entryKeyHash) VALUES (?)";
+ 
+		try {
+			dbConnection = getDBConnection();
+			preparedStatement = dbConnection.prepareStatement(insertTableSQL);
+ 
+			preparedStatement.setString(1, entry.getKey());
+ 
+			// execute insert SQL stetement
+			preparedStatement.executeUpdate();
+ 
+			logger.info(entry.getKey() + " is inserted into ENTRIES table!");
+			result = true;
+ 
+		} catch (SQLException e) 
+		{
+			if (StringUtils.containsIgnoreCase(e.getMessage(), "duplicate key"))
+			{
+				// do nothing - exactly expected 
+			}
+			else
+			{
+			  logger.error(e.getMessage());
+			}
+ 
+		} finally {
+ 
+			try
+			{
+			  if (preparedStatement != null) preparedStatement.close();
+  			  if (dbConnection != null) dbConnection.close();
+			}
+			catch(SQLException e) {
+				 
+				logger.error(e.getMessage());
+	 
+			}
+ 
+		}
+        return result; 
+	}
+	
+	
+	public int getCount()
+	{
+		int count = 0;
+		
+		Connection dbConnection = null;
+		Statement stmt = null;
+		
+		String query = "SELECT COUNT(*) FROM ENTRIES";
+
+		try {
+			dbConnection = getDBConnection();
+			stmt = dbConnection.createStatement();
+			ResultSet rs=stmt.executeQuery(query);
+ 
+			 while(rs.next()){
+                 count=rs.getInt(1);                              
+               }
+             // close ResultSet rs
+             rs.close(); 
+             logger.info("SELECT COUNT(*) FROM ENTRIES = " + count);
+ 
+		} catch (SQLException e) {
+ 
+			logger.error(e.getMessage());
+ 
+		} finally {
+ 
+			try
+			{
+			  if (stmt != null) stmt.close();
+  			  if (dbConnection != null) dbConnection.close();
+			}
+			catch(SQLException e) {
+				 
+				logger.error(e.getMessage());
+	 
+			}
+ 
+		}
+		
+		
+		return count;
+	}
+	
+	private Connection getDBConnection() {
+		 
+		Connection dbConnection = null;
+ 
+		loadConfiguration();
+		
+		try {
+ 
+			Class.forName(DB_DRIVER);
+ 
+		} catch (ClassNotFoundException e) {
+ 
+			logger.error(e.getMessage());
+ 
+		}
+ 
+		try {
+ 
+			dbConnection = DriverManager.getConnection(
+                            DB_CONNECTION, DB_USER,DB_PASSWORD);
+			return dbConnection;
+ 
+		} catch (SQLException e) {
+ 
+			logger.error(e.getMessage());
+ 
+		}
+ 
+		return dbConnection;
+ 
+	}
+	
+	private boolean loadConfiguration()
+	{
+		PropertiesConfiguration config = null;
+		try
+		{
+		    config = new PropertiesConfiguration("db.properties"); 
+
+		    DB_DRIVER = config.getString("driver","org.postgresql.Driver");
+			DB_CONNECTION = config.getString("url","jdbc:postgresql:nca");
+			DB_USER = config.getString("username","postgres");
+			DB_PASSWORD = config.getString("password","admin123");
+
+		   logger.info("Loaded reader properties from db.properties");
+		   return true;
+	    }
+		catch (org.apache.commons.configuration.ConfigurationException e)
+		{
+		  // do nothing just log and use defaults 
+		  logger.warn("Unable to load the configuration db.properties file " + e.toString());
+		  return false;
+		}
+	}
 }

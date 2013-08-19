@@ -3,6 +3,6 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="org.pdc.nca.Entry" table="entries">
-        <id name="key" column="key" />
+        <id name="key" column="entryKeyHash" />
     </class>
 </hibernate-mapping>

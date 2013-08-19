@@ -18,7 +18,7 @@
 	    <echo>  all     : Packages ${app.name}.zip in ${temp.dir}, same as dist, will include ${dist.name}.zip in target directory</echo>
 	    <echo>  dist    : Packages ${app.name}.zip in ${temp.dir}...does NOT deploy</echo>
 	    <echo>  deploy  : deploys application into ${deployment.dir}...does NOT do all/dist</echo>
-	    <echo>  clean   : cleans out local disk cache and database cache</echo>
+	    <echo>  clean   : cleans out local DEV disk cache, logs, candidate hazards and resets database per ${app.name}.sql</echo>
 	    <echo>  compile : Compiles into target/class files</echo>
 	    <echo>  jarfile : builds ${jar.file} in target directory</echo>
 	    <echo>  zipfile : builds ${${dist.name}.zip in target directory</echo>
@@ -112,6 +112,7 @@
   	<delete dir="${temp.dir}/${app.name}"/>
     <copy file="build.properties" todir="${temp.dir}/${app.name}" />
     <copy file="build.xml" todir="${temp.dir}/${app.name}" />
+    <copy file="${app.name}.sql" todir="${temp.dir}/${app.name}" />
     <copy file="pom.xml" todir="${temp.dir}/${app.name}" />
   	<copy todir="${temp.dir}/${app.name}/src">
   		<fileset dir="src" />
@@ -126,14 +127,21 @@
   </target>
 
   <target name="clean" description="cleans out local development caches and database cache">
+    <antcall target="clean-files-only" />
+    <antcall target="reset-database" />
+  </target>
+
+  <target name="clean-files-only" description="cleans out local development disk caches ">
   	<delete dir="${candidates.dir}" />
   	<delete dir="cache" />
   	<delete dir="logs" />
+  </target>
+  <target name="reset-database" description="cleans out database cache">
     <antcall target="dropdb" />
     <antcall target="createdb" />
   </target>
 
-   <target name="dropdb">
+	<target name="dropdb">
   	<echo message="dropping database instance ${app.name}" />
      <exec executable="cmd.exe">
       <arg line="/c dropdb --username postgres --no-password --host localhost --port 5432 ${app.name}" />
@@ -141,9 +149,13 @@
 	</target>
 
 	   <target name="createdb">
-	  	<echo message="creating database instance ${app.name}" />
+	  	<echo message="creating database instance ${app.name}, with table entries" />
 	     <exec executable="cmd.exe">
 	      <arg line="/c createdb --username postgres --no-password --host localhost --port 5432 -T template0 ${app.name}" />
+	     </exec>
+	  	<echo message="done creating ${app.name} instance using createdb, now running ${app.name}.sql " />
+	     <exec executable="cmd.exe">
+	      <arg line="/c psql -U postgres -d ${app.name} -f ${app.name}.sql " />
 	     </exec>
 		</target>
 </project>
