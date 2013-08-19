@@ -15,20 +15,18 @@
 	    <echo>You can use the following targets:</echo>
 	    <echo />
 	    <echo>  help    : (default) Prints this message </echo>
-	    <echo>  all     : Packages ${app.name}.zip in ${temp.dir}, same as dist, will include ${dist.name}.zip in target directory</echo>
 	    <echo>  dist    : Packages ${app.name}.zip in ${temp.dir}...does NOT deploy</echo>
-	    <echo>  deploy  : deploys application into ${deployment.dir}...does NOT do all/dist</echo>
-	    <echo>  clean   : cleans out local DEV disk cache, logs, candidate hazards and resets database per ${app.name}.sql</echo>
+	    <echo>  deploy  : deploys application into ${deployment.dir}...does NOT dist</echo>
+	    <echo>  clean   : wipes DEV disk cache, logs, candidate hazards</echo> 
+	    <echo>            ALSO - resets database using ${app.name}.sql</echo>
 	    <echo>  compile : Compiles into target/class files</echo>
 	    <echo>  jarfile : builds ${jar.file} in target directory</echo>
-	    <echo>  zipfile : builds ${${dist.name}.zip in target directory</echo>
-	    <echo>  createdb : creates a database instance same as app name ${app.name}</echo>
-	    <echo>  dropdb : drops database instance same as app name ${app.name}</echo>
-	    <echo>  maven-jar : builds ${jar.file} in target directory using Maven - includes all lib folder</echo>
-	    <echo>  timestamp.target : test if and how the timestamp function works to adjust format to taste</echo>
+	    <echo>  zipfile : builds ${dist.name}.zip in target directory</echo>
+	    <echo>  createdb : creates a database instance ${app.name}</echo>
+	    <echo>  dropdb : drops database instance ${app.name}</echo>
+	    <echo>  maven-jar : builds ${jar.file} using Maven</echo>
+	    <echo>  timestamp.target : test tstamp</echo>
 	    <echo />
-	    <echo>For example, to clean, compile, and package all at once, run:</echo>
-	    <echo>prompt> ant all </echo>
 	  </target>
 	
 	<target name="all" depends="dist" description="Clean temp dirs, fresh compiles and create ${app.name}.zip, in ${temp.dir}"/>
