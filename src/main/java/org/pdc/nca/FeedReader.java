@@ -95,7 +95,7 @@ public class FeedReader {
 		   useDiskCache              = config.getBoolean("diskCache", true);
 		   useDatabaseCache          = config.getBoolean("dbCache", false);
 		   
-		   logger.info("Loaded reader properties from " + config.getFileName());
+		   logger.info("Loaded reader properties from " + config.getFile().getAbsolutePath());
 		   return true;
 	    }
 		catch (org.apache.commons.configuration.ConfigurationException e)
@@ -353,8 +353,6 @@ public class FeedReader {
 		logger.info("candidateHazardsDirectory = " + reader.getCandidateHazardsDirectory());
 		logger.info("Max Time to Idle (TTI) in cache, seconds " + reader.getTti()); 
 		logger.info("Max Time to Live (TTI) in cache, seconds " + reader.getTtl());
-		if (reader.isXmlOutput()) logger.info("Entries will be printed in XML format");
-		else logger.info("Entries will be printed in .properties format");
 		if (reader.isXmlOutput()) logger.info("Entries will be printed in XML format");
 		else logger.info("Entries will be printed in .properties format");
 		if (reader.isUseDiskCache()) logger.info("Disk Cache will be used");

@@ -725,8 +725,8 @@ public String getKey()
 						  if (this.messages.size() > 2)
 				          {
 				        	  // this would be that rare entry more than two (or more?!) P-VTEC; log it, just for kicks - most likely a parse error
-				        	  logger.error("Aloha, this is NOT an FATAL ERROR, chill-out, found a strange beast in the wild - a Feed Entry with " + messages.size() + " VTECs");
-				        	  logger.error(this.getSyndEntry().getTitle() + ",  Last Updated " + this.getSyndEntry().getUpdatedDate());
+				        	  logger.info("Found a feed Entry with more than 2 VTECs, actually, in fact, " + messages.size() + " VTECs" +
+				        	              this.getSyndEntry().getTitle() + ",  Last Updated " + this.getSyndEntry().getUpdatedDate());
 				          }
 					  }
 				  }
